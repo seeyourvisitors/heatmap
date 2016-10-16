@@ -1,7 +1,8 @@
 'use strict';
 (function (parentWindow) {
   var heatmap
-  var path = document.location.host + document.location.pathname.split('/').join('_')
+  var regexReplace = /[\/\$#\[\]\.]/
+  var path = document.location.host.split(regexReplace).join('_') + document.location.pathname.split(regexReplace).join('_')
   var timeLoad = new Date().getTime()
 
   var calcValue = function (a) {
