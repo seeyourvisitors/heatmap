@@ -1,0 +1,34 @@
+{
+  "name": "seeyourvisitors-heatmap",
+  "version": "1.0.0",
+  "description": "An open source library to get real-time analytics of how your visitors use your website",
+  "main": "heatmap.js",
+  "scripts": {
+    "build": "uglifyjs --mangle --output heatmap.js -- node_modules/heatmap.js/build/heatmap.js heatmap.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seeyourvisitors/heatmap.git"
+  },
+  "keywords": [
+    "analytics",
+    "clickmap",
+    "heatmap",
+    "in",
+    "page"
+  ],
+  "author": "Gary Roberts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seeyourvisitors/heatmap/issues"
+  },
+  "homepage": "https://www.seeyourvisitors.com",
+  "devDependencies": {
+    "standard": "^8.4.0",
+    "uglifyjs": "^2.4.10"
+  },
+  "dependencies": {
+    "heatmap.js": "^2.0.5"
+  }
+}
